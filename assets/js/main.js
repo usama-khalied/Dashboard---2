@@ -36,5 +36,45 @@ for(i=0;i<linkCollapse.length;i++){
     rotate.classList.toggle('rotate')
   })
 }
+let project = setInterval(projectdone,20)
+let coffee = setInterval(happcoffee , 20);
+let bugs = setInterval(happbugs , 20);
+let cool = setInterval(happcool , 20);
+
+
+let count1 = 0;
+let count2 = 0;
+let count3 = 0;
+let count4 = 0;
+
+function projectdone(){
+  count1++;
+document.querySelector('.number1').innerHTML=count1;
+if(count1==80){
+  clearInterval(project);
+}
+}
+function happcoffee(){
+  count2++;
+  document.querySelector('.number2').innerHTML=count2;  
+  if(count2==100){
+    clearInterval(coffee);
+  }
+}
+function happbugs(){
+  count3++;
+  document.querySelector('.number3').innerHTML=count3;  
+  if(count3==200){
+    clearInterval(bugs);
+  }
+}
+function happcool(){
+  count4++;
+  document.querySelector('.number4').innerHTML=count4;  
+  if(count4==150){
+    clearInterval(cool);
+  }
+}
+  
 
 
