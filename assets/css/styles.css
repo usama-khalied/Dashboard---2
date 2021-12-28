@@ -38,6 +38,7 @@ body{
   font-size: var(--normal-font-size);
   transition: .5s;
   overflow-x: hidden;
+  background-color: #F0F2F5;
 }
 
 ul{
@@ -86,7 +87,7 @@ header .logo #close {
   position: fixed;
   top: 11%;
   left: 0;
-  width: var(--nav-width);
+  width:var(--nav-width);
   height: 100%;
   background-color:rgba(0, 0, 0, 0.9);
   color: var(--white-color);
@@ -202,4 +203,74 @@ color: white;
 position: absolute;
 top: 15%;
 left: 20%;
+}
+.dashboard p  span {
+  color: gray;
+}
+.dashboard p:last-of-type {
+  font-weight: 700;
+}
+.dashboard .card {
+  width: 240px;
+  background-color: white;
+  padding: 1rem 0 0;
+  margin: 0 0 0;
+  position: relative;
+  border-radius: 1.2rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.dashboard .card:nth-child(2) {
+margin: 1.5rem .8rem;
+}
+.dashboard .card:nth-child(3) {
+  margin: 1.5rem 0;
+  }
+  .dashboard .card:nth-child(4) {
+    margin: 1.5rem .8rem;
+    }
+.dashboard .row  {
+  display: flex;
+  align-items: center;
+}
+.dashboard .card .card-row {
+  display: flex;
+
+  justify-content: space-between;
+}
+.dashboard .card .card-row .fas{
+  position: absolute;
+top: -12%;
+  left: 7%;
+  border-radius: .5rem;
+  padding: 1.2rem;
+  box-shadow: 2px 1px 2px 1px rgba(11, 127, 171,0.1);
+  background-color:rgba(11, 127, 171);
+  color: white;
+}
+.dashboard .card .card-row .card-text {
+  text-align: right;
+  margin: 1rem 0.55rem;
+}
+.dashboard .card .card-row .card-text h3 {
+  font-weight: 700;
+}
+.dashboard .card .card-row .card-text h5 {
+  font-weight: lighter;
+}
+.dashboard .card p {
+  font-weight: lighter;
+  font-size: .9rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: .5rem .3rem;
+  padding: .6rem;
+  text-align: center;
+}
+.dashboard .card p span {
+ color:rgba(11, 127, 171);
+ font-weight: 700;
+}
+@media (max-width:1200px){
+  .dashboard .row  {
+flex-wrap: wrap;
+  }  
 }
