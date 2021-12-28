@@ -196,3 +196,10 @@ color: white;
 .rotate{
   transform: rotate(180deg);
 }
+
+/* - dashboard */
+.dashboard {
+position: absolute;
+top: 15%;
+left: 20%;
+}
