@@ -88,7 +88,7 @@ header .logo #close {
   position: fixed;
   top: 11%;
   left: 0;
-  width:var(--nav-width);
+  width: 19%;
   height: 100%;
   background-color:rgba(0, 0, 0, 0.9);
   color: var(--white-color);
@@ -198,7 +198,14 @@ color: white;
 .rotate{
   transform: rotate(180deg);
 }
-
+@media (max-width:1250px){
+  .l-navbar{
+width: 12%; 
+  }
+  .expander{
+    width: calc(var(--nav-width) + 13rem);
+  }
+}
 /* - dashboard */
 .dashboard {
 position: absolute;
@@ -221,13 +228,14 @@ left: 20%;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .dashboard .card:nth-child(2) {
-margin: 1.5rem .8rem;
+margin: 1.5rem 1rem;
+
 }
 .dashboard .card:nth-child(3) {
-  margin: 1.5rem 0;
+  margin: 1.5rem 1rem;
   }
   .dashboard .card:nth-child(4) {
-    margin: 1.5rem .8rem;
+    margin: 1.5rem 1rem;
     }
 .dashboard .row  {
   display: flex;
@@ -276,9 +284,14 @@ flex-wrap: wrap;
 margin: 4rem 0 0;
   } 
   .dashboard .card:nth-child(2) ,  .dashboard .card:nth-child(4) {
-    margin: 1.5rem 0;
+    margin: 1.5rem 1rem;
     }
     .dashboard .card:nth-child(3) {
       margin: 0 0;
+    }
+}
+@media (max-width:639px){
+  .dashboard .card:nth-child(2) ,  .dashboard .card:nth-child(4) {
+    margin: 1.5rem 0;
     }
 }
