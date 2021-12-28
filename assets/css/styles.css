@@ -55,6 +55,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 3;
   left: 0;
   padding: 1rem 2rem;
   background-color:rgba(11, 127, 171);
@@ -93,7 +94,7 @@ header .logo #close {
   color: var(--white-color);
   padding: 1.5rem 3rem -3rem 0;
   transition: .5s;
-  z-index: var(--z-fixed);
+  z-index: 2;
   overflow-x: hidden;
 }
 
@@ -272,5 +273,9 @@ top: -12%;
 @media (max-width:1200px){
   .dashboard .row  {
 flex-wrap: wrap;
-  }  
+margin: 4rem 0 0;
+  } 
+  .dashboard .card:nth-child(2) ,  .dashboard .card:nth-child(4) {
+    margin: 1.5rem 0;
+    } 
 }
