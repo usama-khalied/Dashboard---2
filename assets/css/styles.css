@@ -294,4 +294,7 @@ margin: 4rem 0 0;
   .dashboard .card:nth-child(2) ,  .dashboard .card:nth-child(4) {
     margin: 1.5rem 0;
     }
+    .l-navbar{
+top: 9%;
+    }
 }
