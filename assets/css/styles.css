@@ -200,7 +200,7 @@ color: white;
 }
 @media (max-width:1250px){
   .l-navbar{
-width: 35px; 
+width: 38px; 
   }
   .expander{
     width: calc(var(--nav-width) + 13rem);
