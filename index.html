@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Sidebar sub menus</title>
+</head>
+
+<body id="body-pd">
+    <header>
+        <div class="logo">
+            <h4> Q <span> A</span> </h4>
+        </div>
+        <div class="user">
+            <ion-icon style="color: white; margin:0 0.6rem 0 0;" name="person-circle-outline" class="nav__icon">
+            </ion-icon>
+            <p style="color: white;"> Usama Khalied</p>
+        </div>
+    </header>
+
+
+    <div class="l-navbar" id="navbar">
+        <nav class="nav">
+            <div>
+                <div class="nav__brand">
+                    <ion-icon name="menu-outline" class="nav__toggle" id="nav-toggle"></ion-icon>
+                    <a href="#" class="nav__logo">Menu</a>
+                </div>
+                <div class="nav__list">
+                    <a href="#" class="nav__link active">
+                        <ion-icon name="settings-outline" class="nav__icon"></ion-icon>
+                        <span class="nav__name">Setting</span>
+                    </a>
+                    <a href="#" class="nav__link">
+                        <ion-icon name="logo-windows"></ion-icon>
+                        <span class="nav__name">Project</span>
+                    </a>
+
+                    <div class="nav__link collapse">
+                        <ion-icon name="folder-outline" class="nav__icon"></ion-icon>
+                        <span class="nav__name">LSA Management</span>
+
+                        <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
+
+                        <ul class="collapse__menu">
+                            <a href="#" class="collapse__sublink">Contracts</a>
+                            <a href="#" class="collapse__sublink"> Function </a>
+                            <a href="#" class="collapse__sublink"> Function </a>
+                            <a href="#" class="collapse__sublink"> System </a>
+                            <a href="#" class="collapse__sublink"> Equipment </a>
+                        </ul>
+                    </div>
+
+                    <div class="nav__link collapse">
+                        <ion-icon name="people-outline" class="nav__icon"></ion-icon>
+                        <span class="nav__name">Project Management</span>
+
+                        <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
+
+                        <ul class="collapse__menu">
+                            <a href="#" class="collapse__sublink">Contracts</a>
+                            <a href="#" class="collapse__sublink"> Function </a>
+                            <a href="#" class="collapse__sublink"> Function </a>
+                            <a href="#" class="collapse__sublink"> System </a>
+                            <a href="#" class="collapse__sublink"> Equipment </a>
+                        </ul>
+                    </div>
+
+                    <div class="nav__link collapse">
+                        <ion-icon name="medical-outline"></ion-icon>
+                        <span class="nav__name">Dictionaries</span>
+
+                        <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
+
+                        <ul class="collapse__menu">
+                            <a href="#" class="collapse__sublink">Contracts</a>
+                            <a href="#" class="collapse__sublink"> Function </a>
+                            <a href="#" class="collapse__sublink"> Function </a>
+                            <a href="#" class="collapse__sublink"> System </a>
+                            <a href="#" class="collapse__sublink"> Equipment </a>
+                        </ul>
+                    </div>
+
+                    <div class="nav__link collapse">
+                        <ion-icon name="videocam-outline"></ion-icon>
+                        <span class="nav__name">MMS</span>
+
+                        <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
+
+                        <ul class="collapse__menu">
+                            <a href="#" class="collapse__sublink">Contracts</a>
+                            <a href="#" class="collapse__sublink"> Function </a>
+                            <a href="#" class="collapse__sublink"> Function </a>
+                            <a href="#" class="collapse__sublink"> System </a>
+                            <a href="#" class="collapse__sublink"> Equipment </a>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="nav__link">
+                        <ion-icon name="search-outline"></ion-icon>
+                        <span class="nav__name">ESWBS</span>
+                    </a>
+                    <a href="#" class="nav__link">
+                        <ion-icon name="document-text-outline"></ion-icon>
+                        <span class="nav__name">SFD</span>
+                    </a>
+                    <a href="#" class="nav__link">
+                        <ion-icon name="thermometer-outline"></ion-icon>
+                        <span class="nav__name">Employess</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- ===== IONICONS ===== -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <!-- ===== MAIN JS ===== -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
